@@ -1,1 +1,8 @@
 这是我在github上面clone的一个webix项目
+
+ "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/xbsltd/webix-admin-app.git"
+  },
+
+https://github.com/734972743/webix-adminapp-demo.git

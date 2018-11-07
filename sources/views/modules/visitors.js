@@ -1,6 +1,9 @@
 import {JetView} from "webix-jet";
 import {data} from "models/visitors";
 
+
+//这个绘制 折线图
+
 export default class VisitorsView extends JetView{
 	config(){
 		return layout;
@@ -17,7 +20,7 @@ const layout = {
 		},
 		{
 			"view": "chart", "type": "stackedArea",
-			"legend":{
+			"legend":{      //图例
 				"layout": "x",
 
 				"align": "right",
@@ -33,10 +36,10 @@ const layout = {
 			"yAxis":{
 				"start":0,
 				"end": 2000,
-				"step": 500
+				"step": 500   //没500一个刻度
 			},
-			"series":[
-				{ "value": "#rec#", "color": "#a4b4bf"},
+			"series":[   //
+				{ "value": "#rec#", "color": "#a4b4bf"},    //value 取的是值，color:取得是颜色
 				{ "value": "#newv#", "color": "#61b5ee"}
 			],
 			"padding":{

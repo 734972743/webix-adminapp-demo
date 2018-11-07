@@ -1,3 +1,12 @@
+
+
+
+//这个文件应该是存放一些数组数据
+//export 把这些数据暴露别人调用
+
+
+//调用:  文件名.属性名或方法名
+
 export const rating = [
 	{"id":1,"code":"NWTB-1","name":"Webix Chai", rating:5, rank:1},
 	{"id":2,"code":"NWTCO-3","name":"Webix Syrup", rating:1, rank:2},

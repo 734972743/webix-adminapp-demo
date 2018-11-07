@@ -10,10 +10,10 @@ var weekStart1 = webix.Date.add(webix.Date.copy(weekStart),-1,"month",true);
 export const data = [
 	{
 		id:1,
-		start_date: webix.Date.copy(weekStart),
-		end_date:   webix.Date.add(webix.Date.copy(weekStart),3,"day",true),
-		text:   "Conference",
-		calendar: "company"
+		start_date: webix.Date.copy(weekStart),    //开始时间
+		end_date:   webix.Date.add(webix.Date.copy(weekStart),3,"day",true),     //结束时间 ，就是给开始时间添加3天时间
+		text:   "Conference",    //文本
+		calendar: "company"   //日历:  公司
 	},
 	{
 		id:2,

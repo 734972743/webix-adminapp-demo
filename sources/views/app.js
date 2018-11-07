@@ -24,11 +24,14 @@ export default class AppView extends JetView {
 
 //Top toolbar
 var mainToolbar = {
-	view: "toolbar",
+	view: "toolbar",     //工具条组件
 	
 	elements:[
+		//最左边的webix图标
 		{view: "label", label: "<a href='http://webix.com'><img class='photo' src='assets/imgs/logo.png' /></a>", width: 200},
 
+
+		//中间的人物图像
 		{ height:46, id: "person_template", css: "header_person", borderless:true, width: 180, data: {id:3,name: "Oliver Parr"},
 			template: function(obj){
 				var html = 	"<div style='height:100%;width:100%;' onclick='webix.$$(\"profilePopup\").show(this)'>";
@@ -38,6 +41,8 @@ var mainToolbar = {
 			}
 		},
 		{},
+
+		//查找图标按钮
 		{view: "icon", icon: "search",  width: 45, popup: "searchPopup"},
 		{view: "icon", icon: "envelope-o", value: 3, width: 45, popup: "mailPopup"},
 		{view: "icon", icon: "comments-o", value: 5, width: 45, popup: "messagePopup"}

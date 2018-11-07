@@ -6,6 +6,7 @@ const ui = {
 		var items = data.items;
 		var html = "<div class='flex_tmp'>";
 		for(var i=0; i < items.length; i++){
+		//	debugger
 			t = items[i];
 			html += "<div class='item "+t.css+"'>";
 			html += "<div class='webix_icon icon fa-"+ t.icon+"'></div>";
